@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="description" content="Boutique de mode contemporaine — vestes, pantalons et accessoires." />
+<title>STREETLAB — Boutique de mode contemporaine</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anek+Tamil:wght@400;500;600;700;800&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- ============ ANNOUNCEMENT BAR ============ -->
+<div class="announcement">
+  <div class="announcement-track">
+    <span>LIVRAISON OFFERTE DÈS 150€</span>
+    <span>•</span>
+    <span>NOUVELLE COLLECTION DISPONIBLE</span>
+    <span>•</span>
+    <span>EXPÉDITION MONDIALE</span>
+    <span>•</span>
+    <span>PRÉ-COMMANDE OUVERTE</span>
+    <span>•</span>
+    <span>LIVRAISON OFFERTE DÈS 150€</span>
+    <span>•</span>
+    <span>NOUVELLE COLLECTION DISPONIBLE</span>
+    <span>•</span>
+    <span>EXPÉDITION MONDIALE</span>
+    <span>•</span>
+    <span>PRÉ-COMMANDE OUVERTE</span>
+    <span>•</span>
+  </div>
+</div>
+
+<!-- ============ HEADER / NAV ============ -->
+<header class="site-header">
+  <div class="header-inner">
+    <button class="nav-toggle" aria-label="Menu" id="navToggle">
+      <span></span><span></span><span></span>
+    </button>
+
+    <a href="#" class="logo">STREETLAB</a>
+
+    <nav class="main-nav" id="mainNav">
+      <ul>
+        <li><a href="#home">Accueil</a></li>
+        <li><a href="#upperwear">Hauts</a></li>
+        <li><a href="#lowerwear">Bas</a></li>
+        <li><a href="#flexgear">Accessoires</a></li>
+        <li><a href="#all">Tous les produits</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+
+    <div class="header-actions">
+      <button class="icon-btn" aria-label="Recherche">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/></svg>
+      </button>
+      <button class="icon-btn" aria-label="Compte">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+      </button>
+      <button class="icon-btn cart-btn" aria-label="Panier" id="cartBtn">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4Z"/><path d="M3 6h18"/><path d="M16 10a4 4 0 0 1-8 0"/></svg>
+        <span class="cart-count" id="cartCount">0</span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<!-- ============ HERO ============ -->
+<section class="hero" id="home">
+  <div class="hero-bg"></div>
+  <div class="hero-content">
+    <p class="hero-eyebrow">COLLECTION 2026</p>
+    <h1 class="hero-title">VOLT<br>SERIES</h1>
+    <p class="hero-sub">Pièces conçues pour bouger. Coupes techniques, matières premium.</p>
+    <div class="hero-actions">
+      <a href="#all" class="btn btn-primary">DÉCOUVRIR</a>
+      <a href="#upperwear" class="btn btn-ghost">LOOKBOOK</a>
+    </div>
+  </div>
+  <div class="hero-scroll">SCROLL ↓</div>
+</section>
+
+<!-- ============ CATEGORIES ============ -->
+<section class="categories">
+  <div class="container">
+    <div class="cat-grid">
+      <a href="#upperwear" class="cat-card">
+        <div class="cat-img" style="background:linear-gradient(135deg,#1a1a1a,#3a3a3a)"></div>
+        <div class="cat-overlay">
+          <h3>HAUTS</h3>
+          <span>Vestes • Tees • Hoodies</span>
+        </div>
+      </a>
+      <a href="#lowerwear" class="cat-card">
+        <div class="cat-img" style="background:linear-gradient(135deg,#2a2a2a,#0a0a0a)"></div>
+        <div class="cat-overlay">
+          <h3>BAS</h3>
+          <span>Pantalons • Bermudas</span>
+        </div>
+      </a>
+      <a href="#flexgear" class="cat-card">
+        <div class="cat-img" style="background:linear-gradient(135deg,#0a0a0a,#2a2a2a)"></div>
+        <div class="cat-overlay">
+          <h3>ACCESSOIRES</h3>
+          <span>Caps • Sacs • Bijoux</span>
+        </div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FEATURED PRODUCTS ============ -->
+<section class="featured" id="all">
+  <div class="container">
+    <div class="section-head">
+      <h2>BEST-SELLERS</h2>
+      <a href="#all" class="link-arrow">VOIR TOUT →</a>
+    </div>
+
+    <div class="product-grid" id="productGrid">
+      <!-- products injected by JS -->
+    </div>
+  </div>
+</section>
+
+<!-- ============ MARQUEE BANNER ============ -->
+<div class="marquee">
+  <div class="marquee-track">
+    <span>STREETLAB ★ STREETLAB ★ STREETLAB ★ STREETLAB ★ STREETLAB ★ STREETLAB ★ STREETLAB ★</span>
+    <span>STREETLAB ★ STREETLAB ★ STREETLAB ★ STREETLAB ★ STREETLAB ★ STREETLAB ★ STREETLAB ★</span>
+  </div>
+</div>
+
+<!-- ============ FEATURE STORY ============ -->
+<section class="story" id="upperwear">
+  <div class="story-grid">
+    <div class="story-img" style="background:linear-gradient(135deg,#0f0f0f,#262626)"></div>
+    <div class="story-text">
+      <p class="eyebrow">NOTRE SAVOIR-FAIRE</p>
+      <h2>DESIGNED IN PARIS<br>MADE TO LAST</h2>
+      <p>Chaque pièce est pensée dans nos ateliers parisiens et confectionnée avec des matières sélectionnées. Coupes oversize, finitions précises, attention au détail.</p>
+      <a href="#all" class="btn btn-dark">EN SAVOIR PLUS</a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ NEWSLETTER ============ -->
+<section class="newsletter" id="contact">
+  <div class="container">
+    <h2>REJOINS LA COMMUNAUTÉ</h2>
+    <p>Inscris-toi pour recevoir les drops en avant-première, offres exclusives et nouveautés.</p>
+    <form class="newsletter-form" onsubmit="event.preventDefault(); alert('Merci pour ton inscription !');">
+      <input type="email" placeholder="Ton adresse email" required>
+      <button type="submit">S'INSCRIRE</button>
+    </form>
+  </div>
+</section>
+
+<!-- ============ TRUST BAR ============ -->
+<section class="trust-bar">
+  <div class="container">
+    <div class="trust-grid">
+      <div class="trust-item">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="1" y="3" width="15" height="13"/><path d="M16 8h4l3 3v5h-7V8z"/><circle cx="5.5" cy="18.5" r="2.5"/><circle cx="18.5" cy="18.5" r="2.5"/></svg>
+        <h4>LIVRAISON MONDIALE</h4>
+        <p>Expédition rapide partout</p>
+      </div>
+      <div class="trust-item">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 9 12 2l9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><path d="M9 22V12h6v10"/></svg>
+        <h4>RETOUR GRATUIT</h4>
+        <p>Sous 30 jours</p>
+      </div>
+      <div class="trust-item">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M2 10h20"/></svg>
+        <h4>PAIEMENT SÉCURISÉ</h4>
+        <p>Visa • Mastercard • Apple Pay</p>
+      </div>
+      <div class="trust-item">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg>
+        <h4>SUPPORT 7/7</h4>
+        <p>Une équipe à ton écoute</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FOOTER ============ -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-col">
+        <h4 class="footer-logo">STREETLAB</h4>
+        <p>Mode contemporaine. Designed in Paris.</p>
+        <div class="socials">
+          <a href="#" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg></a>
+          <a href="#" aria-label="Twitter"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M22 5.8c-.7.3-1.5.5-2.4.6.9-.5 1.5-1.3 1.8-2.3-.8.5-1.7.8-2.7 1A4.2 4.2 0 0 0 12 8.8c0 .3 0 .6.1.9C8.3 9.5 5 7.7 2.8 5c-.4.6-.6 1.4-.6 2.2 0 1.5.8 2.8 1.9 3.5-.7 0-1.4-.2-2-.5v.1c0 2 1.5 3.7 3.4 4.1-.4.1-.7.2-1.1.2-.3 0-.5 0-.8-.1.5 1.7 2.1 2.9 3.9 2.9-1.4 1.1-3.2 1.8-5.2 1.8H2c1.8 1.2 4 1.8 6.3 1.8 7.5 0 11.7-6.3 11.7-11.7v-.5c.8-.6 1.5-1.3 2-2.1z"/></svg></a>
+          <a href="#" aria-label="Pinterest"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0a12 12 0 0 0-4.4 23.2c-.1-1-.2-2.4 0-3.5l1.5-6.4s-.4-.8-.4-1.9c0-1.8 1-3.2 2.4-3.2 1.1 0 1.6.8 1.6 1.8 0 1.1-.7 2.7-1 4.3-.3 1.3.6 2.3 1.9 2.3 2.3 0 4-2.4 4-5.9 0-3.1-2.2-5.2-5.4-5.2-3.7 0-5.8 2.7-5.8 5.6 0 1.1.4 2.3.9 2.9.1.1.1.2.1.3l-.4 1.4c-.1.2-.2.3-.4.2-1.5-.7-2.4-2.9-2.4-4.6 0-3.8 2.7-7.2 7.9-7.2 4.1 0 7.3 2.9 7.3 6.9 0 4.1-2.6 7.4-6.2 7.4-1.2 0-2.4-.6-2.7-1.4l-.7 2.8c-.3 1-1 2.3-1.5 3.1A12 12 0 1 0 12 0z"/></svg></a>
+        </div>
+      </div>
+
+      <div class="footer-col">
+        <h5>BOUTIQUE</h5>
+        <ul>
+          <li><a href="#">Hauts</a></li>
+          <li><a href="#">Bas</a></li>
+          <li><a href="#">Accessoires</a></li>
+          <li><a href="#">Tous les produits</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h5>AIDE</h5>
+        <ul>
+          <li><a href="#">Contact</a></li>
+          <li><a href="#">Livraison</a></li>
+          <li><a href="#">Retours</a></li>
+          <li><a href="#">FAQ</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h5>LÉGAL</h5>
+        <ul>
+          <li><a href="#">Mentions légales</a></li>
+          <li><a href="#">CGV</a></li>
+          <li><a href="#">Confidentialité</a></li>
+          <li><a href="#">Cookies</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>© 2026 STREETLAB. Tous droits réservés.</p>
+      <div class="payments">
+        <span>VISA</span><span>MC</span><span>AMEX</span><span>PAYPAL</span><span>APPLE PAY</span>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- ============ CART DRAWER ============ -->
+<div class="cart-overlay" id="cartOverlay"></div>
+<aside class="cart-drawer" id="cartDrawer">
+  <div class="cart-head">
+    <h3>PANIER</h3>
+    <button class="cart-close" id="cartClose">×</button>
+  </div>
+  <div class="cart-items" id="cartItems">
+    <p class="cart-empty">Ton panier est vide.</p>
+  </div>
+  <div class="cart-foot">
+    <div class="cart-total"><span>Total</span><span id="cartTotal">0,00 €</span></div>
+    <button class="btn btn-primary cart-checkout">PASSER LA COMMANDE</button>
+  </div>
+</aside>
+
+<script src="script.js"></script>
+</body>
+</html>
