@@ -43,5 +43,10 @@ app.get('/api/health', (req, res) => res.json({ status: 'OK', timestamp: new Dat
 // Error handling
 app.use(errorHandler);
 
-const PORT = process.env.PORT || 5000;
-app.listen(PORT, () => console.log(`OPPA Server running on port ${PORT}`));
+// For local development
+if (process.env.NODE_ENV !== 'production') {
+  const PORT = process.env.PORT || 5000;
+  app.listen(PORT, () => console.log(`OPPA Server running on port ${PORT}`));
+}
+
+module.exports = app;
